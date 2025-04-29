@@ -1,0 +1,20 @@
+{
+  "name": "toastx",
+  "version": "1.0.0",
+  "description": "Simple toast notification library",
+  "main": "dist/toastx.min.js",
+  "scripts": {
+    "build:js": "npx terser src/toastx.js -o dist/toastx.min.js --compress --mangle",
+    "build:css": "cp src/toastx.css dist/toastx.css",
+    "build": "npm run build:js && npm run build:css"
+  },
+  "keywords": [
+    "toast",
+    "notification"
+  ],
+  "author": "FarzadAmeri",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.39.0"
+  }
+}
